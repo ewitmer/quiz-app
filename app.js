@@ -1,0 +1,1 @@
+$('p').css('border', 'solid red 1px')
