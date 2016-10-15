@@ -6,22 +6,25 @@
 	 <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
 <body>
-	<h1>Quiz App</h1>
+	<h3 class='js-title'>Quiz App</h3>
+	<div class = 'js-hide'>
 	<div>
-		<h3 id=js-current-question>Question goes here</h2>
+		<p id=js-current-question>Question goes here</p>
 		<form id='js-question-form'>
-	  		<input type="radio" name="answer" value="answer-1"><label id='js-answer1'>check answer 1</label> <br>
-	  		<input type="radio" name="answer" value="answer-2"><label id='js-answer2'>check answer 2</label></label> <br>
-	  		<input type="radio" name="answer" value="answer-3"><label id='js-answer3'>check answer 3</label></label> <br>
-	  		<input type="radio" name="answer" value="answer-4"><label id='js-answer4'>check answer 4</label></label> <br>
+	  		<input type="radio" name="answer" value="answer-1"><label id='js-answer1'></label> <br>
+	  		<input type="radio" name="answer" value="answer-2"><label id='js-answer2'></label></label> <br>
+	  		<input type="radio" name="answer" value="answer-3"><label id='js-answer3'></label></label> <br>
+	  		<input type="radio" name="answer" value="answer-4"><label id='js-answer4'></label></label> <br>
 	  		<input type="submit" name="submit">
+	  		<span>	<button id='js-next-question'>Next</button> </span>
 		</form>
 	</div>
 	<div class='js-alert'></div>
 	<div>Progress: Question <span id='js-index-question'>5</span> of <span id='js-total-questions'>10</span></div>
 	<div>Score: You've answered <span id='js-total-correct'>2</span> of <span id='js-total-answered'>4</span> correctly.</div>
-	<button id='js-next-question'>Next</button>
-	<button id='js-start-over'>Start Over</button>
+
+	</div>
+	<button id='js-start-over'>Reset</button>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src='app.js'></script>
 </body>
